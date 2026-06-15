@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rajadhani Stock Summary</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://static.zohocdn.com/creator/widgets/version/2.0/widgetsdk-min.js"></script>
+  </head>
+  <body>
+    <main class="stock-widget" aria-live="polite">
+      <section class="toolbar" aria-label="Stock controls">
+        <div class="title-block">
+          <h1>Stock Summary</h1>
+          <p id="lastUpdated">Loading live Creator data...</p>
+        </div>
+        <div class="actions">
+          <label class="search-box" for="searchInput">
+            <span>Search</span>
+            <input id="searchInput" type="search" autocomplete="off" placeholder="Item or warehouse">
+          </label>
+          <button id="refreshButton" type="button" title="Refresh live data">Refresh</button>
+          <button id="exportButton" type="button" title="Export table as CSV">Export CSV</button>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Stock totals">
+        <article>
+          <span>Total Items</span>
+          <strong id="totalItems">0</strong>
+        </article>
+        <article>
+          <span>Available Stock</span>
+          <strong id="totalAvailable">0</strong>
+        </article>
+        <article>
+          <span>Balance Stock Value</span>
+          <strong id="totalBalanceValue">0.00</strong>
+        </article>
+        <article>
+          <span>OP Stock Value</span>
+          <strong id="totalOpValue">0.00</strong>
+        </article>
+      </section>
+
+      <section id="notice" class="notice hidden" role="status"></section>
+
+      <section class="table-shell" aria-label="Aggregated stock report">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Warehouses</th>
+              <th scope="col" class="number-cell">Available Stock</th>
+              <th scope="col" class="number-cell">Balance Stock Value</th>
+              <th scope="col" class="number-cell">OP Stock</th>
+              <th scope="col" class="number-cell">OP Stock Value</th>
+            </tr>
+          </thead>
+          <tbody id="stockTableBody">
+            <tr>
+              <td colspan="6" class="empty-cell">Fetching records...</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="./js/widget.js"></script>
+  </body>
+</html>
