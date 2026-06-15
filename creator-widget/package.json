@@ -1,0 +1,12 @@
+{
+  "name": "rajadhani-balance-widget",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server/index.js",
+    "check": "node --check app/js/widget.js"
+  },
+  "dependencies": {
+    "portfinder": "^1.0.25"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "service": "CREATOR",
+  "cspDomains": {
+    "connect-src": []
+  },
+  "config": [
+    {
+      "name": "applicationLinkName",
+      "type": "string",
+      "defaultValue": "",
+      "placeholder": "Leave blank for current app",
+      "help": "Optional Creator application link name. Use oho-erp only when reading from another app."
+    },
+    {
+      "name": "stockReportName",
+      "type": "string",
+      "defaultValue": "Stock_Report",
+      "help": "Stock report link name."
+    },
+    {
+      "name": "itemReportName",
+      "type": "string",
+      "defaultValue": "Item_Report",
+      "help": "Item report link name used to read OP_Stock and OP_Stock_Value."
+    },
+    {
+      "name": "itemLookupField",
+      "type": "string",
+      "defaultValue": "Item",
+      "help": "Lookup field link name in the Stock form."
+    },
+    {
+      "name": "warehouseField",
+      "type": "string",
+      "defaultValue": "Warehouse",
+      "help": "Warehouse field link name in the Stock form."
+    },
+    {
+      "name": "availableStockField",
+      "type": "string",
+      "defaultValue": "Available_Stock",
+      "help": "Available stock field link name in the Stock form."
+    },
+    {
+      "name": "balanceStockValueField",
+      "type": "string",
+      "defaultValue": "Balance_Stock_Value",
+      "help": "Balance stock value field link name in the Stock form."
+    },
+    {
+      "name": "itemNameField",
+      "type": "string",
+      "defaultValue": "Item_Name",
+      "help": "Item name field link name in the Item form."
+    },
+    {
+      "name": "opStockField",
+      "type": "string",
+      "defaultValue": "OP_Stock",
+      "help": "Opening stock field link name in the Item form."
+    },
+    {
+      "name": "opStockValueField",
+      "type": "string",
+      "defaultValue": "OP_Stock_Value",
+      "help": "Opening stock value field link name in the Item form."
+    }
+  ]
+}
